@@ -6,25 +6,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Tsacdop</title>
 </head>
 
 <body>
-    <header class="shadow bg-gray-50">
-        <nav class="flex flex-row">
-            <a class="m-8 text-2xl text-green-300 cursor-pointer">Tsacdop</a>
-            <a class="m-8 text-2xl">Erutaef</a>
-            <a class="m-8 text-2xl">Golegnahc</a>
+    <header class="px-8 shadow">
+        <nav class="flex flex-row justify-between py-4">
+            <ul class="flex flex-row justify-items-center">
+                <li><a class="mr-8 text-xl ">Tsacdop</a></li>
+                <!-- <li><a class="m-8 text-xl">Erutaef</a></li>
+                <li><a class="m-8 text-xl">Golegnahc</a></li> -->
+            </ul>
+            <ul>
+                <li><a href="https:github.com/stonega/tasacdop"><img
+                            class="obeject-contain h-8 transition duration-500 ease-in-out transform hover:-translate-y-1"
+                            src="assets/Octocat.png"></a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <section class="container mx-auto px-4 py-40">
-            <img src="./assets/logo_text.png" alt="logo" class="h-24">
-            <div class="text-3xl text-grey-500 font-light">Enjoy podcast with Tsacdop</div>
+    <main class="max-w-6xl mx-auto px-4 sm:px-6">
+        <section class="relative px-4 py-32">
+            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_y1tuirjk.json" background="transparent"
+                speed="0.5" class="invisible md:visible absolute top-10 right-0  w-4/12 object-covor"
+                style="width: 400px; height: 400px; z-index: -10;" autoplay></lottie-player>
+            <span
+                class="text-7xl decoration-slice bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent"
+                style="font-family: 'Montserrat', sans-serif;">Tsacdop</span>
+            <div class="text-2xl text-gray-500 font-light py-4">Enjoy podcast with Tsacdop, an open source podcast
+                app
+                build with Flutter.</div>
+            <a
+                href='https://play.google.com/store/apps/details?id=com.stonegate.tsacdop&hl=en_US&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img />
+                <img class="object-cover h-24" alt='Get it on Google Play'
+                    src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
+        </section>
+        <section class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 justify-center pb-20 z-10">
+            <div class="w-full md:w-80 flex-1 h-64 bg-green-400 p-8 rounded-lg">
+                <div class="text-3xl text-white">👋 Unique design</div>
+                <div class="text-xl text-gray-100 pt-8">You will get a totally different experience with any other
+                    podcast players. </div>
+            </div>
+            <div class="w-full md:w-80 flex-1 h-64 bg-blue-400 p-8 rounded-lg">
+                <div class="text-3xl text-white">💛 Privacy firendly</div>
+                <div class="text-xl text-gray-100 pt-8">Tsacdop is a free and open sourced application, which won't
+                    upload your data to the server. </div>
+            </div>
+            <div class="w-full md:w-80 flex-1 h-64 bg-green-400 p-8 rounded-lg">
+                <div class="text-3xl text-white">✨ Featureful</div>
+                <div class="text-xl text-gray-100 pt-8">A lot of features waiting fot you to discover.</div>
+            </div>
+        </section>
+        <section>
+            <div class="text-2xl py-2">A&Q</div>
+            <div class="text-xl text-green-400 py-2">How to manage podcasts with group?</div>
+            <div>The default group is home when subscribe a new podcast, home group can not be deleted, you can
+                create new groups and move podcast to a new group, each podcast can be added to multi groups,v"e
+                podcasts in the group will be moved to home group if you delete it.</div>
+            <div class="text-xl text-green-400 py-2">How to subscribe podcast?</div>
+            <div>ou can tap add button on topleft corner of home page, then search
+                podacast title or rss link, you could find the podcast, or you can import OMPL
+                file.</div>
+        </section>
+        <section>
+            <div class="text-2xl py-2 mt-4">Golegnahc</div>
+            <div class="py-2 text-xl text-green-400">Release date 2021/02/27 v0.6.0</div>
+            <ul class="list-disc list-inside">
+                <li>Load local folder as playlist</li>
+                <li>Option to always hide new mark for podcast.</li>
+                <li>Memory use reduced a lot.</li>
+                <li>Add reddit channel link.</li>
+            </ul>
         </section>
     </main>
     <footer>
-
+        <div class="w-full bg-gray-100 mt-8">
+            <div class="mx-auto text-center text-gray-400 py-2">stonegate.me ©2021 Made with tailwinds</div>
+        </div>
     </footer>
 </body>
 
