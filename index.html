@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
     <title>Tsacdop</title>
 </head>
 
@@ -22,27 +23,32 @@
                 <li><a class="m-8 text-xl">Golegnahc</a></li> -->
             </ul>
             <ul>
-                <li><a href="https:github.com/stonega/tasacdop"><img
+                <li><a href="https://github.com/stonega/tsacdop"><img
                             class="obeject-contain h-8 transition duration-500 ease-in-out transform hover:-translate-y-1"
                             src="assets/Octocat.png"></a></li>
             </ul>
         </nav>
     </header>
-    <main class="max-w-6xl mx-auto px-4 sm:px-6">
-        <section class="relative px-4 py-32">
-            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_r6kxufax.json" background="transparent"
-                speed="0.5" class="invisible md:visible absolute top-10 right-0  w-4/12 object-covor"
-                style="width: 400px; height: 400px; z-index: -10;" autoplay></lottie-player>
+    <main class="max-w-6xl mx-auto px-4 sm:px-8">
+        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_r6kxufax.json" background="transparent"
+            speed="0.5" class="invisible md:visible w-4/12 object-covor lottie" style="width: 400px; height: 400px;"
+            autoplay>
+        </lottie-player>
+        <section class="px-4 py-32">
             <span
                 class="text-7xl decoration-slice bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent"
                 style="font-family: 'Montserrat', sans-serif;">Tsacdop</span>
             <div class="text-2xl text-gray-500 font-light py-4">Enjoy podcast with Tsacdop, an open source podcast
                 app
                 build with Flutter.</div>
-            <a
-                href='https://play.google.com/store/apps/details?id=com.stonegate.tsacdop&hl=en_US&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img />
-                <img class="object-cover h-24" alt='Get it on Google Play'
-                    src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
+            <div class="flex flex-col md:flex-row">
+                <a
+                    href='https://play.google.com/store/apps/details?id=com.stonegate.tsacdop&hl=en_US&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img />
+                    <img class="object-cover h-24" alt='Get it on Google Play'
+                        src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
+                <a href='https://f-droid.org/en/packages/com.stonegate.tsacdop/'><img />
+                    <img class="object-cover h-24" alt='Get it on F-Droid' src='assets/fdroid.png' /></a>
+            </div>
         </section>
         <section class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 justify-center pb-20 z-10">
             <div class="w-full md:w-80 flex-1 h-64 bg-green-400 p-8 rounded-lg">
@@ -57,7 +63,7 @@
             </div>
             <div class="w-full md:w-80 flex-1 h-64 bg-green-400 p-8 rounded-lg">
                 <div class="text-3xl text-white">✨ Featureful</div>
-                <div class="text-xl text-gray-100 pt-8">A lot of features waiting fot you to discover.</div>
+                <div class="text-xl text-gray-100 pt-8">A lot of features waiting for you to discover.</div>
             </div>
         </section>
         <section>
@@ -85,10 +91,10 @@
                     style="box-shadow: inset 0 -0.125em 0 0 #fff, inset 0 -0.375em 0 0 rgb(121 222 219 / 40%);">
                     Golegnahc</div>
             </div>
-            <div class="py-2 text-xl text-green-400">Latest release date 2021/02/27 <a class="underline"
-                    href="https://github.com/stonega/tsacdop/releases/tag/v0.6.0">v0.6.0</a></div>
+            <div class="py-2 text-xl text-green-400">Latest release <a class="underline"
+                    href="https://github.com/stonega/tsacdop/releases/tag/v0.6.0">v0.6.0</a> at 2021/02/27</div>
             <ul class="list-disc list-inside">
-                <li class="text-lg">Load local folder as playlist</li>
+                <li class="text-lg">Load local folder as playlist.</li>
                 <li class="text-lg">Option to always hide new mark for podcast.</li>
                 <li class="text-lg">Memory use reduced a lot.</li>
                 <li class="text-lg">Add reddit channel link.</li>
@@ -96,8 +102,23 @@
         </section>
     </main>
     <footer>
-        <div class="w-full bg-gray-100 mt-8">
-            <div class="mx-auto text-center text-gray-400 py-2"><a class="pr-4" href="privacy.html">Privacy Policy</a>stonegate.me
+        <div class="w-full bg-gray-100 mt-12">
+            <div class="mx-auto flex flex-row justify-center py-8 space-x-4">
+                <button
+                    class="ring-2 ring-green-400 ring-opacity-50 ring-inset flex hover:bg-green-300 rounded-full py-2 px-4 felx-row justify-items-center"
+                    onclick="window.open('https://twitter.com/tsacdop')"><img class="object-cover w-6 mr-2"
+                        src="assets/twitter.svg" alt="Twitter">
+                    <div class="text-xl text-gray-600">@tsacdop</div>
+                </button>
+                <button
+                    class="ring-2 ring-red-400 ring-opacity-50 ring-inset flex hover:bg-red-300 hover:ring-0 rounded-full py-2 px-4 felx-row justify-items-center"
+                    onclick="window.open('https://reddit.com/r/Tsacdop')"><img class="object-cover w-6 mr-2"
+                        src="assets/reddit.png" alt="Reddit">
+                    <div class="text-xl text-gray-600">/r/Tsacdop</div>
+                </button>
+            </div>
+            <div class="mx-auto text-center text-gray-400 pb-4"><a class="pr-4" href="privacy.html">Privacy
+                    Policy</a>stonegate.me
                 ©2021</div>
         </div>
     </footer>

@@ -1,6 +1,6 @@
-@layer utilities {
-    .text-gradient {
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+.lottie{
+  position: fixed; 
+  top: 8rem;
+  right: 15vw;
+  z-index: -10;
 }
