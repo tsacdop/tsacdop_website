@@ -1,4 +1,4 @@
-.lottie{
+.lottie {
   position: fixed; 
   top: 4rem;
   left: min(70vw, 80rem);
@@ -8,10 +8,22 @@
 }
 
 @media (max-width: 768px) {
-  .lottie{
+  .lottie {
     top: 18rem;
     width: 15em;
     left: 50vw;
     height: 15em;
   }
+}
+
+.letter {
+  display: inline-block;
+}
+
+.P {
+  color: #34D399;
+}
+
+.T {
+  color: #60A5FA;
 }

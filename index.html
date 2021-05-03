@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <title>Tsacdop</title>
@@ -18,7 +19,7 @@
     <header class="px-8 shadow w-full fixed ">
         <nav class="flex flex-row justify-between py-4 backdrop-filter backdrop-blur">
             <ul class="flex flex-row justify-items-center">
-                <li><a class="mr-8 text-xl ">TSACDOP</a></li>
+                <li class="mr-8 text-xl tracking-wider text-green-400" id="logo">TSACDOP</li>
                 <!-- <li><a class="m-8 text-xl">Erutaef</a></li>
                 <li><a class="m-8 text-xl">Golegnahc</a></li> -->
             </ul>
@@ -31,8 +32,7 @@
     </header>
     <main class="max-w-6xl mx-auto px-4 sm:px-8">
         <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_r6kxufax.json" background="transparent"
-            speed="0.5" class="visible md:visible w-4/12 object-covor lottie"
-            autoplay>
+            speed="0.5" class="visible md:visible w-4/12 object-covor lottie" autoplay>
         </lottie-player>
         <section class="px-4 py-32">
             <span
@@ -132,6 +132,7 @@
                 ©2021</div>
         </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
