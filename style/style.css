@@ -1,6 +1,17 @@
 .lottie{
   position: fixed; 
   top: 4rem;
-  left: 80rem;
+  left: min(70vw, 80rem);
+  width: 20em;
+  height: 20em;
   z-index: -10;
+}
+
+@media (max-width: 768px) {
+  .lottie{
+    top: 18rem;
+    width: 15em;
+    left: 50vw;
+    height: 15em;
+  }
 }
