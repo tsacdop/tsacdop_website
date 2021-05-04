@@ -9,10 +9,12 @@
 
 @media (max-width: 768px) {
   .lottie {
+    display: none;
+    position: absolute;
     top: 18rem;
-    width: 15em;
+    width: 10em;
     left: 50vw;
-    height: 15em;
+    height: 10em;
   }
 }
 
